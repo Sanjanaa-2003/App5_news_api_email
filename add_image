@@ -1,0 +1,15 @@
+Steps to add an image from a website
+1. Go to the website, right click on the image, open image(not link) in new tab
+2. Copy the url
+3. Open python console
+    a. url = "paste the link"
+    b. Press enter
+    c. Type url and this returns the url again
+    d. import requests  (Press enter)
+    e. response=requests.get(url)   (Press enter)
+    f. response  (Press enter)
+    g. with open("image.jpg","wb") as file:
+            file.write(response.content)
+       (Press enter)
+    h. Run the file, the image will be added
+
